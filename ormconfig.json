@@ -1,0 +1,20 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "qwe",
+    "database": "api_rentx",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+        "src/modules/cars/infra/typeorm/entities/*.ts",
+        "src/modules/accounts/infra/typeorm/entities/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "./src/shared/infra/typeorm/migrations"
+    },
+    "migrations": [
+        "./src/shared/infra/typeorm/migrations/*.ts"
+    ]
+}
